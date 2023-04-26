@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="PasSafe">
+    <meta property="og:description" content="A strong password generator from given passphrase.">
+    <meta property="og:image" content="https://ssuroj.github.io/passafe/images/og_img.jpg">
+    <meta property="og:url" content="https://s.suroj">
+    <title>Passafe</title>
+    <meta name="description" content="Generate strong and secure passwords with Passafe's password generator by choosing passphrase and get a unique password.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div class="container">
+      <h2>Password Generator</h2>
+        <div class="settings">
+          <div class="setting">
+            <input type="text" id="passphrase" placeholder="Passphrase"/>
+          </div>
+          <div class="setting">
+            <label for="length">Length:</label>
+            <input type="number" id="length" min="8" max="40" value="16" oninput="updateSlider(this.value);" />
+            <input type="range" id="slider" min="8" max="40" value="16" oninput="updateNumber(this.value);" />
+          </div>
+    
+          
+          <div class="setting">
+            <label>Include uppercase letters</label>
+            <input type="checkbox" id="uppercase" checked />
+          </div>
+          <div class="setting">
+            <label>Include lowercase letters</label>
+            <input type="checkbox" id="lowercase" checked />
+          </div>
+          <div class="setting">
+            <label>Include numbers</label>
+            <input type="checkbox" id="numbers" checked />
+          </div>
+          <div class="setting">
+            <label>Include symbols</label>
+            <input type="checkbox" id="symbols" checked />
+          </div>
+        </div>
+    
+        <div class="result-container">
+          <span id="result"></span>
+          <button class="btn" id="clipboard" onclick="copyPass()">
+            <img src="images/clipboard.png" alt="copy" id="clipimg">
+          </button>
+        </div>
+      </div>
+      
+      
+      
+      <script src="js/script.js"></script>
+      <script src="js/password.js"></script>
+    </body>
+    </html>
