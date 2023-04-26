@@ -4,7 +4,7 @@
 # PaSec
 PaSec is a secure password generator that allows you to create strong, unique passwords using a passphrase of your choice. With PaSec, you can generate passwords that are virtually impossible to crack, giving you peace of mind when it comes to online security.
 
-## Website => [ssuroj.github.io/passec](https://ssuroj.github.io/pasec)
+## Website => [ssuroj.github.io/pasec](https://ssuroj.github.io/pasec)
 
 ## Screenshot
 ![App Screenshot](./images/screenshoot.png)
