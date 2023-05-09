@@ -25,6 +25,7 @@ function copyPass(){
   navigator.clipboard.writeText(finalPassword)
   .then(() => {
     resultText.innerHTML = "<p style='color:red;'> Copied!</p>";
+    passPhraseInput.value = "";
     setTimeout(() => {
       resultText.textContent = '';
     }, 2000);
